@@ -1,0 +1,28 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" trimDirectiveWhitespaces="true" %>
+<link rel="stylesheet" type="text/css" href="navigation.css">
+<link rel="stylesheet" type="text/css" href="closemenu.css">
+
+<div id="containerNav">
+    <ul id="main">
+        <button class="close_menu close_menu_anim">
+            <span>toggle menu</span>
+        </button>
+        <li id="enter">Войти</li>
+    </ul>
+
+    <div id="menu">
+        <div id="headMenu"></div>
+        <ul id="menuList">
+            <li>Обсерватория</li>
+            <li>Галерея</li>
+            <li>Блог</li>
+            <li>О нас</li>
+            <li><a href="/home/max/projectM/new/contacts.html">Контакты</a></li>
+        </ul>
+        <div id="footer">
+            <p>&copy; 2016 project M<br>
+                Все права защищены.
+            </p>
+        </div>
+    </div>
+</div>

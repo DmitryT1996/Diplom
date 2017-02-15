@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #train {
+      position: absolute;
+      left: -16em;
+    }
+    #butt {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
+
+  <button id="butt">Click!</button>
+
+  <script>
+    butt.onclick = function() {
+      var elem = document.getElementById("train");
+      var pos = -16;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 15) {
+          clearInterval(id);
+        }
+        else {
+          pos++;
+          elem.style.left = pos + 'em'
+        }
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

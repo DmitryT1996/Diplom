@@ -1,0 +1,225 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+.modal {
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.modal-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+/*    -moz-animation-name: slideIn;
+    -moz-animation-duration: 0.4s;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;*/
+/*    overflow-y: scroll;
+    background: -moz-linear-gradient(right, #bd1778 30%, #08a3d9);
+    background: -webkit-linear-gradient(right, #bd1778 30%, #08a3d9);
+    background: -o-linear-gradient(right, #bd1778 30%, #08a3d9);
+    background: (right, #bd1778, #08a3d9);*/
+}
+.circle {
+    float: left;
+    width: 1em;
+    height: 1em;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    font-size: 2em;
+    margin: 1em 0em 0em 1em;
+}
+.circle.close {
+    color: #1c1c1c;
+    float: left;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #bd1734;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body {
+	position: relative;
+	top: 8em;
+}
+.about-us {
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+	width: 60em;
+    max-width: 70%;
+    height: 20em;
+}
+.about-us h1 {
+    position: absolute;
+    font-family: "Liberation Sans", sans-serif;
+    font-size: 4em;
+    left: 1em;
+    color: black;
+    text-transform: uppercase;
+}
+.about-us p {
+    position: absolute;
+    top: 4em;
+    left: -8em;
+	font-family: "Liberation Sans", sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: black;
+    width: 30em;
+}
+.about-us p::-moz-selection {
+    background: #fff;
+    color: black;
+}
+.about-us p::-webkit-selection {
+    background: #fff;
+    color: black;
+}
+.about-us p::selection {
+    background: #fff;
+    color: black;
+}
+.about-us img {
+    position: absolute;
+    top: 5em;
+    right: -8em;
+    border: 2px solid white;
+}
+.cd-fixed-bg {
+    min-height: 100%;
+    height: 40em;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/home/max/projectM/wall/telescope2.jpg);
+}
+.huy {
+    background-color: red;
+    height: 50em;
+    width: 100%;
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {top: -100%; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {top: -100%; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes slideOut {
+    from {bottom: 0; opacity: 1} 
+    to {bottom: -100%; opacity: 0}
+}
+
+@keyframes slideOut {
+    from {bottom: 0; opacity: 1}
+    to {bottom: -100%; opacity: 0}
+}

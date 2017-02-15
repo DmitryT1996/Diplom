@@ -1,0 +1,95 @@
+.close_menu {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  text-indent: -9999px;
+  box-shadow: none;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close_menu:focus {
+  outline: none;
+}
+
+.close_menu span {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: white;
+}
+
+.close_menu span::before,
+.close_menu span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+}
+
+.close_menu span::before {
+  top: -6px;
+}
+
+.close_menu span::after {
+  bottom: -6px;
+}
+
+
+
+.close_menu_anim {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.close_menu_anim span {
+  transition: background 0s 0.2s;
+}
+
+.close_menu_anim span::before,
+.close_menu_anim span::after {
+  transition-duration: 0.2s, 0.2s;
+  transition-delay: 0.2s, 0s;
+}
+
+.close_menu_anim span::before {
+  transition-property: top, transform;
+}
+
+.close_menu_anim span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.close_menu_anim.is-active {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.close_menu_anim.is-active span {
+  background: none;
+}
+
+.close_menu_anim.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.close_menu_anim.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.close_menu_anim.is-active span::before,
+.close_menu_anim.is-active span::after {
+  transition-delay: 0s, 0.2s;
+}

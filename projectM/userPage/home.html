@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>UserName</title>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<span id="logo">
+				<a href="/home/max/projectM/userPage/home.html"><img src="/home/max/projectM/icons/logo3.png"></a>
+			</span>
+
+			<ul id="main">
+				<button class="enter-menu">
+				 	<span><img src="/home/max/projectM/icons/smallAvatar.png"></span>
+				</button>
+				<li id="exit">Выйти</li>
+			</ul>
+		</div>
+
+		<div id="menu">
+			
+		</div>
+
+		<div id="galleryWrap">
+			<div id="info">
+				<h1>ГАЛЕРЕЯ</h1>
+				<h2>Ваша галерея пока что пуста, вы можете добавить фотографии
+						нажав на кнопку "добавить".
+				</h2>
+			</div>
+			<div id="button">
+				<button>Добавить</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		window.addEventListener("keydown", function(e) {
+		    // space and arrow keys
+		    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+		        e.preventDefault();
+		    }
+		}, false);
+	</script>
+
+</body>
+</html>

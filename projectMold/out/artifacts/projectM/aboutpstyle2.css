@@ -1,0 +1,346 @@
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+}
+.modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+/*    -moz-animation-name: slideIn;
+    -moz-animation-duration: 0.4s;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;*/
+    overflow-y: scroll;
+/*    background: -moz-linear-gradient(right, #bd1778 30%, #08a3d9);
+    background: -webkit-linear-gradient(right, #bd1778 30%, #08a3d9);
+    background: -o-linear-gradient(right, #bd1778 30%, #08a3d9);
+    background: (right, #bd1778, #08a3d9);*/
+}
+.circle {
+    z-index: 100000;
+    position: fixed;
+/*    top: 1em;
+    left: 1em;*/
+    width: 1em;
+    height: 1em;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    font-size: 2em;
+/*    margin: 1em 0em 0em 1em;*/
+}
+.circle.close {
+    color: #1c1c1c;
+    float: left;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #bd1734;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.about-us {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: url(wall/5p.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header1 {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.header1 h1 {
+    text-align: center;
+    font-family: "Uni Sans", sans-serif;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.about_info {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+/*    border: thin solid black;*/
+}
+.about_info #hello {
+    color: #bd1778;
+    font-size: 1.2em;
+}
+.about_info p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -5.3em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    line-height: 1.3em;
+    color: white;
+    width: 38em;
+    max-width: 100%;
+/*    border: thin solid black;    */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.about-us p::-moz-selection {
+    background: #fff;
+    color: black;
+}
+.about-us p::-webkit-selection {
+    background: #fff;
+    color: black;
+}
+.about-us p::selection {
+    background: #fff;
+    color: black;
+}*/
+.about_dev {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #45b992;
+}
+.header2 {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.header2 h1 {
+    font-family: "Uni Sans", sans-serif;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+ul.contacts {
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+}
+ul.contacts li {
+    display: inline-block;
+    width: 50%;
+    height: 40em;
+    margin: 0px -3px;
+}
+ul.contacts .first {
+    position: relative;
+/*    background-image: url(/home/max/projectM/wall/act2wall3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;*/
+}
+ul.contacts .second {
+    position: relative;
+/*    background-image: url(/home/max/projectM/wall/act1wall2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;*/
+}
+ul.contacts img {
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+ul.contacts .first #aut1-head {
+    position: absolute;
+    top: 24em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 22em;
+}
+/*ul.contacts .first #aut1-info {
+    position: absolute;
+    top: 22em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30em;
+}*/
+ul.contacts .second #aut2-head {
+    position: absolute;
+    top: 24em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20em;
+}
+/*ul.contacts .second #aut2-info {
+    position: absolute;
+    top: 22em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30em;
+}*/
+ul.contacts h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 1em 1em 0.7em 1em;
+    color: #d4d4d4;
+}
+ul.contacts h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em 0.2em 0.7em 0.2em;
+    color: #d4d4d4;
+}
+ul.contacts p {
+    font-family: "Liberation Sans", monospace;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-top: 3em;
+    margin-left:  14em;
+    padding: 1em 0.2em 0.7em 0.2em;
+    text-transform: uppercase;
+    border: thin solid black;
+    text-align: left;
+}
+
+.about_contact{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: url(wall/andromeda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header3 {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.header3 h1 {
+    text-align: center;
+    font-family: "Uni Sans", sans-serif;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.about_info2 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+/*    border: thin solid black;*/
+}
+.about_info2 p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -7.3em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    line-height: 1.3em;
+    color: white;
+    width: 38em;
+    max-width: 100%;
+}
+
+#button2 {
+    position: absolute;
+    width: 20em;
+    bottom: 4em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+#button2 button {
+    font-size: 1.6em;
+    padding: 0.5em 1em 0.3em 1em;
+    letter-spacing: -2px;
+    border: 0.01em solid #bd1778;
+    cursor: pointer;
+    font-family: "Uni Sans", sans-serif;
+    background-color: #bd1778;
+    color: #fff;
+    border-radius: 1em;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -100%; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -100%; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}

@@ -1,0 +1,24 @@
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\bin\Debug\Диплом.exe.config
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\bin\Debug\Диплом.exe
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\bin\Debug\Диплом.pdb
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\obj\Debug\Диплом.csprojResolveAssemblyReference.cache
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\obj\Debug\Диплом.Form1.resources
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\obj\Debug\Диплом.Properties.Resources.resources
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\obj\Debug\Диплом.csproj.GenerateResource.Cache
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\obj\Debug\Диплом.exe
+c:\users\dima\documents\visual studio 2013\Projects\Диплом\Диплом\obj\Debug\Диплом.pdb
+C:\Users\Dima\Documents\Visual Studio 2013\Projects\Диплом\Диплом\bin\Debug\ZedGraph.Web.dll
+C:\Users\Dima\Documents\Visual Studio 2013\Projects\Диплом\Диплом\bin\Debug\ZedGraph.Web.xml
+D:\флешка\Диплом\Диплом\bin\Debug\Диплом.exe.config
+D:\флешка\Диплом\Диплом\obj\Debug\Диплом.exe
+D:\флешка\Диплом\Диплом\obj\Debug\Диплом.pdb
+E:\Диплом\Диплом\bin\Debug\Диплом.exe.config
+E:\Диплом\Диплом\obj\Debug\Диплом.exe
+E:\Диплом\Диплом\obj\Debug\Диплом.pdb
+E:\Диплом\Диплом\bin\Debug\Диплом.exe
+E:\Диплом\Диплом\bin\Debug\ZedGraph.Web.xml
+E:\Диплом\Диплом\obj\Debug\Диплом.csprojResolveAssemblyReference.cache
+E:\Диплом\Диплом\obj\Debug\Диплом.Form1.resources
+E:\Диплом\Диплом\obj\Debug\Диплом.Properties.Resources.resources
+E:\Диплом\Диплом\obj\Debug\Диплом.csproj.GenerateResource.Cache
+E:\Диплом\Диплом\bin\Debug\Диплом.pdb

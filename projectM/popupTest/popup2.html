@@ -1,0 +1,86 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/home/max/projectM/popupTest/popupStyle2.css">
+		<link rel="stylesheet" type="text/css" href="/home/max/projectM/form/testStyle.css">
+		<title>
+			ТЕСТ2
+		</title>
+	</head>
+	<body>
+
+	<h2>Bottom Modal</h2>
+
+	<button id="myBtn">Open Modal</button>
+
+	<div id="myModal" class="modal">
+		<div class=modal-content>
+			<div class=modal-header>
+				<span class="close">&times</span>
+				<h1>немного о регистрации</h1>
+			</div>
+				<div class="modal-body">
+					<div class="about-reg">
+						<p>
+							В Бостонском метро поезд № 86 отошёл от станции Парк-стрит, но ни на следующей станции, ни в депо не появился, без следов исчезнув вместе с машинистом и примерно с 350 пассажирами.
+
+							Профессор алгебры из Гарвардского университета Роджер Тьюпело, прочитав в газетах о произошедшем, приходит к главному управляющему городским метрополитеном Келвину Уайту, чтобы сообщить свою гипотезу исчезновения поезда. Согласно Тьюпело, после открытия новой линии Бойлстон изменились топологические свойства бостонского метрополитена и поезд попал в иное измерение. Приняв его за сумасшедшего, Уайт выпроваживает Тьюпело.
+
+							Однако вскоре Уайту становится ясно, что поезд действительно находится где-то в метро. Так, состав № 86 периодически фиксирует автоматика в разных частях метрополитена, он потребляет электроэнергию, но никто его не видит, хотя шум его слышен. Келвин Уайт вызывает Роджера Тьюпело и просит помочь найти поезд.
+
+							В Бостонском метро поезд № 86 отошёл от станции Парк-стрит, но ни на следующей станции, ни в депо не появился, без следов исчезнув вместе с машинистом и примерно с 350 пассажирами.
+						</p>
+					</div>
+
+					<div class="form">
+						<div class="formContent">
+							<form method="POST" action="queryServlet">
+								<div class="field-wrap">
+									<input type="text" name="firstName" placeholder="Введите Имя" value="" >
+									<input type="text" name="firstName" placeholder="Введите Фамилию " value="">
+									<input type="text" name="firstName" placeholder="Введите Email" value="">
+									<input type="text" name="firstName" placeholder="Введите дату" value="">
+									<input type="text" name="firstName" placeholder="Введите начало" value="">
+									<input type="text" name="firstName" placeholder="Введите конец" value="">
+								</div>
+								<span class="submit">
+										<input type="submit" name="submit" value="Отправить">
+								</span>
+							</form>
+						</div>
+					</div>	
+			</div>
+		</div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script>
+
+	</body>
+</html>

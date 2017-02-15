@@ -1,0 +1,31 @@
+#containerNav {
+    position: relative;
+    height: 100%;
+}
+ul#main {
+    z-index: 1000;
+    position: absolute;
+    color: black;
+    top: 1.46em;
+    left: 1em;
+    list-style-type: none;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+ul #enter-menu {
+    display: inline;
+    text-transform: uppercase;
+    color: white;
+    font-size: 34px;
+    margin-left: 8px;
+    padding: 0.6em 0.1em 0.58em 0em;
+}
+ul #enter  {
+    color: white;
+    position: absolute;
+    top: 0.30em;
+    display: inline;
+    text-transform: uppercase;
+    left: 2em;
+    font-size: 1.4em;
+}

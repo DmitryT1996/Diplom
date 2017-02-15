@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mariadb-java-client-1.5.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/mariadb-java-client-1.5.2.jar!/" />
+      <root url="jar://$USER_HOME$/jssc-2.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
