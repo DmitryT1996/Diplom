@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="welcomestyle2.css">
+	<link rel="stylesheet" type="text/css" href="aboutpstyle3.css">
+	<title>
+		projectM | добро пожаловать
+	</title>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.fullPage.js"></script>
+</head>
+<body>
+<div id="container">
+	<span id="logo">
+		<a href="welcome.html"><img src="/icons/logo.png"></a>
+	</span>
+
+	<ul id="main">
+		<li id="login"><a href="login.html">Вход</a></li>
+		<li id="signup"><a href="signup.html">Регистрация</a></li>
+		<li id="blog"><a href="blog.jsp">Блог</a></li>
+	</ul>
+
+	<div id="titleWrap">
+		<div id="title">
+			<h1>Откройте новый взгляд на звёздное небо</h1>
+		</div>
+		<div id="button">
+			<button>УЗНАТЬ БОЛЬШЕ</button>
+		</div>
+	</div>
+
+	<div id="other">
+		<div id="social">
+			<p>Язык</p>
+			<p>Пожертвовать</p>
+		</div>
+		<ul>
+			<li><img src="/icons/twitter.png"></li>
+			<li><img src="/icons/facebook.png"></li>
+			<li><img src="/icons/vk3.png"></li>
+		</ul>
+	</div>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="circle">
+				<span class="close">&times</span>
+			</div>
+			<div id="fullpage" class="modal-body">
+				<div class="section" id="about-us">
+					<div class="header1">
+						<h1>О projectm</h1>
+					</div>
+					<div class="about_info">
+						<p>
+							<span id="hello">ПРИВЕТ!</span><br>
+							Мы - маленькая, независимая команда, цель которой создать удобный инструмент<br>
+							для наблюдения и фотографирования небесных объектов. <br>
+							<br>
+							C 2015 года, мы развивали нашу идею до апогея, набирались опыта на других
+							наших незначительно важных проектах и решили взяться за кое-что иное,<br>
+							кое-что, чем вдохновляются большинство людей. <br>
+							Звёздное небо.
+						</p>
+					</div>
+				</div>
+
+				<div class="section" id="about-dev">
+					<div class="header2">
+						<h1>НАША КОМАНДА</h1>
+					</div>
+					<ul class="contacts">
+						<li class="first">
+							<img src="/home/max/projectM/aut/2A.png">
+							<span id="aut1-head">
+									<h1>Дмитрий Терещенко</h1>
+								</span>
+						</li>
+						<li class="second">
+							<img src="/home/max/projectM/aut/1A-2.png">
+							<span id="aut2-head">
+									<h1>Максим Грек</h1>
+								</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="section" id="about-contact">
+					<div class="header3">
+						<h1>МЫ ХОТИМ БЫТЬ ЛУЧШЕ</h1>
+					</div>
+					<div class="about_info2">
+						<p>
+							Несомненно, вы можете связаться с нами, оставить свои пожелания и<br>
+							предложения, либо наоборот, ткнуть нас носом в наши ошибки. В любом случае<br>
+							кажое замечание будет учтено, чтобы мы смогли улучшить наш сервис еще лучше.
+							<br>
+							<br>
+							Но для этого, нам нужно будет связаться с вами в ответ, чтобы уточнить нюансы.<br>
+							Поэтому проверяйте свою почту, как можно чаще. Мы будем отвечать по мере возможностей.
+						</p>
+					</div>
+					<div id="button2">
+						<a href="/home/max/projectM/new/contacts.html"><button>СВЯЗАТЬСЯ С НАМИ</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        //modal
+        $('#button').click(function() {
+            $('#myModal').animate({
+                top: 0
+            }, 'easeInOut');
+
+            $('.circle').animate({
+                top: '1em',
+                left: '1em'
+            }, 'easeInOut');
+        });
+
+        $('.circle').click(function() {
+            $('#myModal').animate({
+                top: "100%"
+            }, 'easeInOut');
+
+            $('.circle').animate({
+                top: "100%"
+            }, 'easeInOut');
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $.fn.fullpage.setAllowScrolling(false);
+    });
+    $(document).on('click', '.circle', function(){
+        $.fn.fullpage.setAllowScrolling(false);
+    });
+    $(document).on('click', '#button', function(){
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+</script>
+</body>
+</html>

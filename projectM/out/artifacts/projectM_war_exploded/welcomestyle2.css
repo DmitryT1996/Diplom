@@ -1,0 +1,143 @@
+html {
+    overflow: hidden;
+}
+body {
+    background-image: url(/wall/telescope_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 8%;
+}
+#container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#logo {
+    z-index: 10000;
+    position: absolute;
+    top: 1.6em;
+    right: 2em;
+    cursor: pointer;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+ul#main {
+    z-index: 1000;
+    position: absolute;
+    top: 2.1em;
+    list-style-type: none;
+    letter-spacing: -1px;
+    cursor: pointer;
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul a {
+    color: white;
+    text-decoration: none;
+}
+ul #login  {
+    color: white;
+    display: inline;
+    margin-left: 1em;
+    font-size: 1.4em;
+}
+ul #signup  {
+    color: white;
+    display: inline;
+    margin-left: 0.6em;
+    font-size: 1.4em;
+}
+ul #blog {
+    color: white;
+    display: inline;
+    margin-left: 0.6em;
+    font-size: 1.4em;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#titleWrap {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#title {
+    width: 63em;
+    max-width: 90%;
+    margin-top: 4em;
+}
+#title h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    letter-spacing: -0.06em;
+    line-height: 1em;
+}
+#button {
+    width: 20em;
+    margin-top: 3em;
+    text-align: center;
+}
+#button button {
+    font-size: 1.8em;
+    padding: 0.5em 1em 0.3em 1em;
+    letter-spacing: -2px;
+    border: 0.01em solid #fff;
+    cursor: pointer;
+    font-family: "Uni Sans", sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+#button button:hover, #button button:active, #button button:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: #1c1c1c;
+    border: 0.01em solid #fff;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#other {
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    width: 100%;
+}
+#other ul li {
+    display: inline;
+    text-transform: uppercase;
+    float: right;
+    margin-bottom: 1em;
+    margin-right: 0.4em;
+    cursor: pointer;
+}
+#other #social p {
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+    font-size: 0.7em;  
+    cursor: pointer; 
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-weight: bold;
+}
+#other #social p:hover {
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+    font-size: 0.7em;  
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.3em;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

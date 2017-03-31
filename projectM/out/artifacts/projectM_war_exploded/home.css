@@ -1,0 +1,174 @@
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: "Liberation Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+#container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #bd1734;
+    height: 5em;
+    z-index: 1000;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#logo {
+    z-index: 10000;
+    position: absolute;
+    top: 1.6em;
+    right: 2em;
+    cursor: pointer;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+ul#main {
+    z-index: 1000;
+    position: absolute;
+    color: black;
+    top: 1.46em;
+    left: 1em;
+    list-style-type: none;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+#enter-menu {
+    color: white;
+    margin-top: 0.3em;
+    margin-left: 0.8em;
+    border: thin solid white;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul #exit  {
+    color: white;
+    position: absolute;
+    top: 0.30em;
+    display: inline;
+    text-transform: uppercase;
+    left: 2.3em;
+    font-size: 1.4em;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#galleryWrap {
+    position: relative;
+    height: 100%;
+    margin-top: 5em;
+    margin-left: 13em;
+    background-color: black;
+/*    border: thin solid white;*/
+}
+#info h1 {
+    position: absolute;
+    margin-top: -1.6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Uni Sans", sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+    letter-spacing: -0.06em;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+#info h2 {
+    position: absolute;
+    margin-top: -2.2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Uni Sans", sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    letter-spacing: -0.06em;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+#addPhoto {
+    position: absolute;
+    margin-top: 2em;
+    width: 7em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    padding: 0.5em 1em 0.3em 1em;
+    letter-spacing: -2px;
+    border: 0.01em solid #fff;
+    cursor: pointer;
+    font-family: "Uni Sans", sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+#addPhoto:hover, #addPhoto:active, #addPhoto:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: #1c1c1c;
+    border: 0.01em solid #fff;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#userMenuWrap {
+    position: relative;
+    float: left;
+    background-color: white;
+    width: 13em;
+    height: 100%;
+}
+#userPhoto {
+    position: absolute;
+    width: 11.2em;
+    height: 11.2em;
+    top: 2.6em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: pink;
+    border-radius: 0.2em;
+}
+#enter-obs {
+    position: absolute;
+    bottom: 6em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+    height: 3em;
+    border: thin solid #45b992;
+    background-color: #45b992;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Uni Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -1px;
+    border-radius: 2em;
+    padding: 0.5em 1em 0.3em 1em;
+    cursor: pointer;
+}
+#footer p {
+    font-family: "Liberation Sans", sans-serif;
+    letter-spacing: -1px;
+    font-size: 0.8em;
+    color: #606060;
+    text-align: center;
+}
+/*-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="obs.css">
+	<title>Обсерватория</title>
+	<script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<span id="logo">
+				<a href="/home/max/projectM/userPage/home.html"><img src="/home/max/projectM/icons/logo3.png"></a>
+			</span>
+
+			<ul id="main">
+				<button id="enter-menu">
+				</button>
+				<li id="exit">Выйти</li>
+			</ul>
+		</div>
+
+		<div id="userMenuWrap">
+			<div id="userPhoto"></div>
+			<button id="exit-obs">завершить</button>
+		</div>
+
+		<div id="web"></div>
+
+		<div id="obsSettingsWrap">
+			<div id="setTele">
+				<h1>Параметры телескопа</h1>
+				<span id="focush1">
+					<h2>ручная фокусировка</h2>
+				</span>
+				<input type="range" id="focus" name="range" min="0" max="5" step="1" value="0">
+				<span id="focush2">
+					<h2>включить обогрев</h2>
+				</span>
+				<label class="switch">
+					<input type="checkbox">
+					<div class="slider round"></div>
+				</label>
+				<span id="focush3">
+					<h2>температура</h2>
+				</span>
+				<div id="graph"></div>
+			</div>
+
+			<div id="setPhoto">
+				<h1>Параметры съёмки</h1>
+				<span id="photo1">
+					<h2>ISO</h2>
+				</span>
+				<input type="range" id="iso" name="iso" min="0" max="5" step="1" value="0">
+				<span id="photo2">
+					<h2>ВЫДЕРЖКА</h2>
+				</span>
+				<input type="range" id="expo" name="expo" min="0" max="5" step="1" value="0">
+				<button id="makePhoto">сделать снимок</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+	</script>
+
+	<script>
+		window.addEventListener("keydown", function(e) {
+		    // space and arrow keys
+		    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+		        e.preventDefault();
+		    }
+		}, false);
+	</script>
+
+</body>
+</html>
