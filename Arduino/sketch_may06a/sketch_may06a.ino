@@ -15,23 +15,15 @@ float enters[InN];
 float hidden[OutN];
 float hidd_ent_w[OutN] = {0.35, 1.01};
 float ent_hidd_w[2][2] = {{2.819, 6.2947}, {-2.4866, -6.6707}};
-
 OneWire oneWire(15);
 DallasTemperature ds(&oneWire);
 byte qty;
 
-void setup()
-{
-  Serial.begin(9600);
-  ds.begin(); 
-  qty = ds.getDeviceCount(); 
-  pinMode (IN4, OUTPUT);
-  pinMode (IN3, OUTPUT);
-  pinMode (FAN, OUTPUT);
-  pinMode (LED, OUTPUT);
-}
 
-float sigma(float value){
+class NeuroNet
+{
+public:
+  float sigma(float value){
     return value * (1 - value);
 }
 
@@ -57,23 +49,36 @@ void Count(){
 void Command(int value)
 {
   if(value == 1)  
-    digitalWrite(FAN, HIGH);
+    digitalWrite(LED, HIGH);
   else if(value == 0) 
-    digitalWrite(FAN, LOW);
+    digitalWrite(LED, LOW);
 
 }
-
-
 
 void CreateVector()
 {
   for (int i = 0; i < qty; i++){
     patt[i] = ds.getTempCByIndex(i);
   } 
+  
+    for (int i = 0; i < qty; i++){
+    Serial.println(patt[i]);
+  } 
   delay(1000);
 }
 
+};
 
+void setup()
+{
+  Serial.begin(9600);
+  ds.begin(); 
+  qty = ds.getDeviceCount(); 
+  pinMode (IN4, OUTPUT);
+  pinMode (IN3, OUTPUT);
+  pinMode (FAN, OUTPUT);
+  pinMode (LED, OUTPUT);
+}
 
  void Fan_High()
   {
@@ -86,14 +91,14 @@ void CreateVector()
 
 void loop()
 {
+  NeuroNet obj;
+     ds.requestTemperatures();
+    obj.CreateVector();
+    obj.Count();
+    obj.Command(outer);
   if (Serial.available() > 0) 
   {
-    ds.requestTemperatures();
-    CreateVector();
-    Count();
-    Command(outer);
-
-    
+ 
     message_for_motor = Serial.read();
     Serial.println(message_for_motor);
 
